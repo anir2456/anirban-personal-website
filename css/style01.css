@@ -1,0 +1,45 @@
+.active{
+ font-style: bold;
+}
+
+
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+  .navbar navbar-default navbar-fixed-bottom {
+    background-color: #FF0055;
+    border-color: #E7E7E7;
+}
+.navbar-text > a{
+	color: inherit;
+	
+}
+
+body{
+	padding-top: 70px;
+	border: 25px navy;
+	padding: 10px;
+	background-image: url("beach02.jpg");
+
+
+
+}
+
+.media-anir{
+  border-radius: 50%;
+}
+
+.media-anir02{
+  border-radius: 140%;
+ -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
