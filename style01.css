@@ -1,10 +1,4 @@
-.active{
- font-style: bold;
-}
-
-
-
-  .carousel-inner > .item > img,
+.carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
@@ -21,7 +15,7 @@
 
 body{
 	padding-top: 70px;
-	
+	border: 25px navy;
 	padding: 10px;
 	background-image: url("beach02.jpg");
 
