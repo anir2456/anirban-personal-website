@@ -12,28 +12,28 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style01.css">
-   
   
-  <script>
-    $(document).ready(function() {
-    $(".dropdown-toggle").dropdown();
-});
+  
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="javascript01.js"></script>
 
-    window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+  <style type="text/css">
+#div08{
+  
+  
+  
+  
+  
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 2.6);
+ -webkit-box-shadow:0 2px 10px rgba(0, 0, 0, 2.6);
 }
 
-  </script>
+  </style>
+
+  
+   
+  
+  
 
 
 
@@ -42,12 +42,47 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-inverse">
+  
+
+
+    <nav id="return01" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Explore</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+
+      <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('div01');">Experiences</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('div88');">Basic Info</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('myCarousel');">Slides- Beauty</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('div02');">Music- amazing</a></li>
+    </ul>
+    </div>
+    </nav>
+<br />
+<br />
+
+
+
+  
+
+
+  <nav id="navbar04" class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -60,7 +95,105 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="www.google.co.uk">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
-        <li><button type="button" class="btn btn-primary navbar-btn">Sign in</button></li>
+        <li><button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#login-modal">Sign in</button></li>
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="av01.gif">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                    <div class="modal-body">
+                <div id="div-login-msg">
+                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-login-msg">Type your username and password.</span>
+                            </div>
+                <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                  <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                  <div class="modal-body">
+                <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+                     <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="global02.gif">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+                    <div class="modal-body">
+                <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+      </div>
+    </div>
+  </div>
+    <!-- END # MODAL LOGIN -->
          <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile<span class="caret"></span>
   <ul class="dropdown-menu">
@@ -127,12 +260,19 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<p id="demo"><strong>Click the button to get your position!</strong></p>
+</div>
+
+<button class="button_locate01" onclick="getLocation()">Try It</button>
+
+<div id="mapholder"></div>
 <br>
 
-
-<div class="dropdown">
+<div id="second02" class="dropdown">
   <button onclick="myFunction()" class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Latest News 
+    Latest News
  
     <!-- Display icon in button -->
     <span class="caret"></span>
@@ -155,26 +295,40 @@
     <li><a href="#">Extreme Gaming</a></li>
   </ul>
 </div>
-</div><br>
+</div>
+<br>
 
 
+<div id="div08" class="jumbotron jumbotron04">
+  <h1>Fun Stuff That I want to Do</h1>
+  <div>
+    <p>
+      <ul>
+        <li> I wanna go and throw some puddles in the water and watch the way they just scoot across the surface. Looks amazing!</li>
+        <li>I wanna learn how to fly a plane!</li>
+        <li>I wanna go try a rainbow bagel</li>
+        <li>I wanna puppy and a kitty as pets who get along amiably!</li>
+      </ul>
+    </p>
+  </div>
+  
+  </div>
+  <br>
+  <a href="#" onclick="return false;" onmousedown="resetScroller('return01');">Go back to the navigator bar</a>
+  <br>
 
+         <div class="col-md-8 col-md-offset-2" id="div88">
 
-    <div class="container-fluid">
-    <article>
-
-         <div class="col-md-6">
-
-         <font style="verdana">Basic Info</font>
+         <font style="verdana">Basic info!! </font>
 
          
          <table class="table table-striped">
           <thead>
             <tr>
               <th>Name</th>
-              <th>Contact</th>
-              <th>Email</th>
-              <th>Language Skills</th>
+              <th>best ones</th>
+              <th>links</th>
+              <th>cool facts</th>
             </tr>
           </thead>
           <tbody>
@@ -189,6 +343,44 @@
             
           </tbody>
          </table>
+         
+</div>
+<br>
+
+
+
+
+
+
+    <div id="div02" class="container-fluid">
+    <article>
+
+         <div class="col-md-6 col-md-offset-2">
+
+         <font style="verdana">Amazing songs and musicians</font>
+
+         
+         <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Best song</th>
+              <th>The musicians</th>
+              <th>Amazing collections</th>
+              <th>Interesting Facts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td><a href="https://www.youtube.com/watch?v=PnMvj0MG6TQ">It's easier to run</a></td>
+              <td><a href="http://www.linkinpark.com/">Linkin Park</a></td>
+              <td><a href="https://www.discogs.com/Linkin-Park-Hybrid-Theory/release/690978">Hybrid Theory</a></td>
+              <td><a href="http://www.shortlist.com/entertainment/music/20-things-you-probably-didnt-know-about-linkin-park#">How well do you know your fav band!!</a></td>
+            </tr>
+
+            
+          </tbody>
+         </table>
          </article>
          
 
@@ -196,6 +388,10 @@
 
 
          </div>
+
+         <br/>
+<a href="#" onclick="return false;" onmousedown="resetScroller('return01');">Go back </a>
+
     <br>
     <div class="well">
 <blockquote>
@@ -205,7 +401,7 @@
 </div>
    <br>
 
-        <div class="jumbotron text-center" >
+        <div id="div01" class="jumbotron text-center jumbotron01" >
           <h1>Experiences</h1>
           <p>Interactive highlights of professional and academic Experiences along with Diverse Projects</p>
           <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Professional Background</a>
@@ -348,24 +544,33 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="anir006.jpg" alt="..." width="260" height="260">
+        <img src="futuristic06.jpg" alt="..." width="260" height="260">
       </div>
 
       <div class="item">
-        <img src="company02.jpg" alt="Chania" width="260" height="260">
+        <img src="cars02.jpg" alt="Cars" width="260" height="260">
       </div>
     
       <div class="item">
-        <img src="company01.jpg" alt="Flower" width="260" height="260">
+        <img src="virtual_reality03.jpg" alt="virtual" width="260" height="260">
       </div>
 
       <div class="item">
-        <img src="virtual_reality03.jpg" alt="Flower" width="260" height="260">
+        <img src="nature_amazing.jpeg" alt="nature__" width="260" height="260">
+      </div>
+
+      <div class="item">
+        <img src="neon02.jpg" alt="nature__" width="260" height="260">
+      </div>
+      <div class="item">
+        <img src="amazing08.jpg" alt="nature__" width="260" height="260">
       </div>
     </div>
 
@@ -379,11 +584,42 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <br/>
+
+  <button type="button" class="btn btn-success"><a href="#" onclick="return false;" onmousedown="resetScroller('return01');"><font color="red">Go back </a></font></button>
+
+
+  <br/>
+  <br/>
+
+  <div class="well">
+    <article>
+      <ul>
+        <li>sfvsfd f gn g  hm </li>
+        <li>A. TERMS OF SALE
+B. ITUNES STORE TERMS AND CONDITIONS
+C. MAC APP STORE, APP STORE, APP STORE FOR APPLE TV AND IBOOKS STORE TERMS AND CONDITIONS
+D. APPLE MUSIC TERMS AND CONDITIONS
+
+THE LEGAL AGREEMENTS SET OUT BELOW GOVERN YOUR USE OF THE ITUNES STORE, MAC APP STORE, APP STORE, APP STORE FOR APPLE TV, IBOOKS STORE AND APPLE MUSIC SERVICES ("SERVICES"). TO AGREE TO THESE TERMS, CLICK "AGREE." IF YOU DO NOT AGREE TO THESE TERMS, DO NOT CLICK "AGREE," AND DO NOT USE THE SERVICES.
+
+A. TERMS OF SALE
+
+PAYMENTS, TAXES, AND REFUND POLICY
+
+You agree that you will pay for all products you purchase through the Services, and that Apple may charge your payment method for any products purchased and for any additional amounts (including any taxes and late fees, as applicable) that may be accrued by or in connection with your Account. YOU ARE RESPONSIBLE FOR THE TIMELY PAYMENT OF ALL FEES AND FOR PROVIDING APPLE WITH A </li>
+<li>If a product becomes unavailable following a transaction but prior to download, your sole remedy is</li>
+<li>other input device. When accessing the Services on your computer, 1-Click purchasing may be </li>
+      </ul>
+    </article>
+  </div>
+
+
 
 
        
        <br>
-       <br>
+       
 
 <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
   <div class="container">
