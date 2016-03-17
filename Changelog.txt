@@ -1,0 +1,6 @@
+- Indented all tags; each child tag is two spaces indented from its parent,
+  and each closing tag is unindented to match the opening tag
+- Moved all images to img folder, scripts to js folder
+- Added periods to .navbar-default, .navbar-fixed-bottom
+- Moved #div08 styling from <head> to style01.css
+- Moved styling from <font> tags to css sheet in <title>, but not #div88
