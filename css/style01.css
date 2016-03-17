@@ -1,46 +1,40 @@
 .active{
- font-style: bold;
+  font-style: bold;
 }
 
+title {
+  font-family: tahoma;
+}
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
 
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
-  .jumbotron01 {
-    margin-bottom: 0px;
-    background-image: url(beauty01.jpg);
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    
-    margin: auto;
+.jumbotron01 {
+  margin-bottom: 0px;
+  background-image: url("../img/beauty01.jpg");
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin: auto;
 }
 
   
-  .navbar navbar-default navbar-fixed-bottom {
-    background-color: #FF0055;
-    border-color: #E7E7E7;
+.navbar .navbar-default .navbar-fixed-bottom {
+  background-color: #FF0055;
+  border-color: #E7E7E7;
 }
 .navbar-text > a{
 	color: inherit;
-	
 }
 
 body{
 	padding-top: 70px;
-	
 	padding: 10px;
-	
-  background-image: url("blue02.jpg");
- 
-
-
-
+  background-image: url("../img/blue02.jpg");
 }
 
 .media-anir{
@@ -49,26 +43,26 @@ body{
 
 .media-anir02{
   border-radius: 140%;
- -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
 }
 
 @-webkit-keyframes mymove {
-    from {background-color: red;}
-    to {background-color: blue;}
+  from {background-color: red;}
+  to {background-color: blue;}
 }
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #login-modal .modal-dialog {
-    width: 350px;
-    opacity: 80;
-    transition: opacity 0.3s, visibility 0.3s;
+  width: 350px;
+  opacity: 80;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 #login-modal input[type=text], input[type=password] {
@@ -78,53 +72,53 @@ body{
 #div-login-msg,
 #div-lost-msg,
 #div-register-msg {
-    border: 1px solid #dadfe1;
-    height: 30px;
-    line-height: 28px;
-    transition: all ease-in-out 500ms;
+  border: 1px solid #dadfe1;
+  height: 30px;
+  line-height: 28px;
+  transition: all ease-in-out 500ms;
 }
 
 #div-login-msg.success,
 #div-lost-msg.success,
 #div-register-msg.success {
-    border: 1px solid #68c3a3;
-    background-color: #c8f7c5;
+  border: 1px solid #68c3a3;
+  background-color: #c8f7c5;
 }
 
 #div-login-msg.error,
 #div-lost-msg.error,
 #div-register-msg.error {
-    border: 1px solid #eb575b;
-    background-color: #ffcad1;
+  border: 1px solid #eb575b;
+  background-color: #ffcad1;
 }
 
 #icon-login-msg,
 #icon-lost-msg,
 #icon-register-msg {
-    width: 30px;
-    float: left;
-    line-height: 28px;
-    text-align: center;
-    background-color: #dadfe1;
-    margin-right: 5px;
-    transition: all ease-in-out 1000ms;
+  width: 30px;
+  float: left;
+  line-height: 28px;
+  text-align: center;
+  background-color: #dadfe1;
+  margin-right: 5px;
+  transition: all ease-in-out 1000ms;
 }
 
 #icon-login-msg.success,
 #icon-lost-msg.success,
 #icon-register-msg.success {
-    background-color: #68c3a3 !important;
+  background-color: #68c3a3 !important;
 }
 
 #icon-login-msg.error,
 #icon-lost-msg.error,
 #icon-register-msg.error {
-    background-color: #eb575b !important;
+  background-color: #eb575b !important;
 }
 
 #img_logo {
-    max-height: 100px;
-    max-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 /* #########################################
@@ -132,40 +126,40 @@ body{
    ######################################### */
 
 .modal-backdrop.in {
-    filter: alpha(opacity=50);
-    opacity: .8;
+  filter: alpha(opacity=50);
+  opacity: .8;
 }
 
 .modal-content {
-    background-color: #ececec;
-    border: 1px solid #bdc3c7;
-    border-radius: 0px;
-    outline: 0;
+  background-color: #ececec;
+  border: 1px solid #bdc3c7;
+  border-radius: 0px;
+  outline: 0;
 }
 
 .modal-header {
-    min-height: 16.43px;
-    padding: 15px 15px 15px 15px;
-    border-bottom: 0px;
+  min-height: 16.43px;
+  padding: 15px 15px 15px 15px;
+  border-bottom: 0px;
 }
 
 .modal-body {
-    position: relative;
-    padding: 5px 15px 5px 15px;
+  position: relative;
+  padding: 5px 15px 5px 15px;
 }
 
 .modal-footer {
-    padding: 15px 15px 15px 15px;
-    text-align: left;
-    border-top: 0px;
+  padding: 15px 15px 15px 15px;
+  text-align: left;
+  border-top: 0px;
 }
 
 .checkbox {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .btn {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .btn:focus,
@@ -174,25 +168,25 @@ body{
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-    outline: none;
+  outline: none;
 }
 
 .btn-lg, .btn-group-lg>.btn {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .btn-link {
-    padding: 5px 10px 0px 0px;
-    color: #95a5a6;
+  padding: 5px 10px 0px 0px;
+  color: #95a5a6;
 }
 
 .btn-link:hover, .btn-link:focus {
-    color: #2c3e50;
-    text-decoration: none;
+  color: #2c3e50;
+  text-decoration: none;
 }
 
 .glyphicon {
-    top: 0px;
+  top: 0px;
 }
 
 .form-control {
@@ -209,6 +203,10 @@ body{
   color: black;
 }
 .jumbotron04{
-   background-image: url();
+  background-image: url();
+}
 
+#div08{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 2.6);
+  -webkit-box-shadow:0 2px 10px rgba(0, 0, 0, 2.6);
 }
