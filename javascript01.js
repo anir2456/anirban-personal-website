@@ -38,6 +38,20 @@ var currentY= window.pageYOffset;
     }
 }
 
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+
+//<script>
+//$(document).ready(function () {
+//$(window).on('scroll', function(){
+//$('.navbar-ex1-collapse').collapse('hide')
+//});
+//});
+//++____</script>
+
+
+
 
 
 $(function() {
@@ -190,3 +204,5 @@ var hashTagActive = "";
             hashTagActive = this.hash;
         }
     });
+
+    

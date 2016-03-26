@@ -28,6 +28,15 @@
  -webkit-box-shadow:0 2px 10px rgba(0, 0, 0, 2.6);
 }
 
+.well24{
+  background-color: #67BCD6;
+}
+
+#head02{
+
+  text-shadow: 2px 2px #00DD66;
+}
+
   </style>
 
   
@@ -42,40 +51,6 @@
   </head>
 
   <body>
-  
-
-
-    <nav id="return01" class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Explore</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav">
-
-      <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('div01');">Experiences</a></li>
-      <li><a href="#"  onmousedown="autoScrollTo('div88');">Basic Info</a></li>
-      <li><a href="#"  onmousedown="autoScrollTo('myCarousel');">Slides- Beauty</a></li>
-      <li><a href="#"  onmousedown="autoScrollTo('div02');">Music- amazing</a></li>
-    </ul>
-    </div>
-    </nav>
-<br />
-<br />
-
-
-
-  
-
-
   <nav id="navbar04" class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -160,10 +135,10 @@
                     
                     <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
-                     <div class="modal-header" align="center">
-          <img class="img-circle" id="img_logo" src="global02.gif">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                     <div class="modal-header">
+          
+          
+            
           </button>
         </div>
                     <div class="modal-body">
@@ -213,7 +188,13 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-         <li><button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal04">Sign Up</button></li>
+         <button class="btn btn-info navbar-btn" data-toggle="collapse" data-target="#collapseExample02" aria-expanded="false" aria-controls="collapseExample">
+    Navigate
+  </button>
+
+  
+
+
 
          <!-- Modal -->
   <div class="modal fade" id="myModal04" role="dialog">
@@ -261,11 +242,39 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<div class="collapse" id="collapseExample02">
+    <nav id="return01" class="navbar navbar-default navbar06 ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Explore</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
 
-<p id="demo"><strong>Click the button to get your position!</strong></p>
+      <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('div01');">Experiences</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('div88');">Basic Info</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('myCarousel');">Slides- Beauty</a></li>
+      <li><a href="#"  onmousedown="autoScrollTo('div02');">Music- amazing</a></li>
+    </ul>
+    </div>
+    </nav>
+
+  </div>
+
+
+
+<p id="demo"><strong>Click the button below to get your position!</strong></p>
 </div>
 
-<button class="button_locate01" onclick="getLocation()">Try It</button>
+<button class="button_locate01" onclick="getLocation()" data-toggle="tooltip" title="See where you at!!">Try It</button>
 
 <div id="mapholder"></div>
 <br>
@@ -298,45 +307,55 @@
 </div>
 <br>
 
+<p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Career Objectives!!
+  </button>
+</p>
 
-<div id="div08" class="jumbotron jumbotron04">
-  <h1>Fun Stuff That I want to Do</h1>
+<div class="collapse" id="collapseExample">
+  <div class="card card-block">
+
+<div  class="jumbotron jumbotron04">
+  <h1>Domains in which I am keen to work in and excel myself</h1>
   <div>
     <p>
       <ul>
-        <li> I wanna go and throw some puddles in the water and watch the way they just scoot across the surface. Looks amazing!</li>
-        <li>I wanna learn how to fly a plane!</li>
-        <li>I wanna go try a rainbow bagel</li>
-        <li>I wanna puppy and a kitty as pets who get along amiably!</li>
+        <li> I want to perform to my level best in diverse programming related concepts</li>
+        <li>Having worked as a soft skills and vocabulary trainer, I am expert enough to get into the role of a soft skills trainer</li>
+        <li>I want to optimize my work ethic and efficiency to be a lucrative asset in any computer software organization</li>
+        <li>Having a keen interest in UNITY and Java Game Development, I want to delve deeper into this particular field</li>
       </ul>
     </p>
   </div>
   
   </div>
+  </div>
+  </div>
   <br>
-  <a href="#" onclick="return false;" onmousedown="resetScroller('return01');">Go back to the navigator bar</a>
+  
   <br>
 
          <div class="col-md-8 col-md-offset-2" id="div88">
 
-         <font style="verdana">Basic info!! </font>
+         <h1 id="head02"><font face="verdana" color="green">Basic info</font></h1>
 
          
          <table class="table table-striped">
           <thead>
             <tr>
               <th>Name</th>
-              <th>best ones</th>
-              <th>links</th>
-              <th>cool facts</th>
+              <th>Contact info</th>
+              <th>Email</th>
+              <th>Languages Spoken</th>
             </tr>
           </thead>
           <tbody>
             
             <tr>
               <td>Anirban Bhattacharya</td>
-              <td>+1-475-449-6381</td>
-              <td>anirban4842@gmail.com</td>
+              <td><a href="tel:4754496381">Contact me</a></td>
+              <td><a href="mailto:email@anirban4842.com">anirban4842@gmail.com</a></td>
               <td>English, Hindi, Spanish, Bengali</td>
             </tr>
 
@@ -357,30 +376,7 @@
 
          <div class="col-md-6 col-md-offset-2">
 
-         <font style="verdana">Amazing songs and musicians</font>
-
          
-         <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Best song</th>
-              <th>The musicians</th>
-              <th>Amazing collections</th>
-              <th>Interesting Facts</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td><a href="https://www.youtube.com/watch?v=PnMvj0MG6TQ">It's easier to run</a></td>
-              <td><a href="http://www.linkinpark.com/">Linkin Park</a></td>
-              <td><a href="https://www.discogs.com/Linkin-Park-Hybrid-Theory/release/690978">Hybrid Theory</a></td>
-              <td><a href="http://www.shortlist.com/entertainment/music/20-things-you-probably-didnt-know-about-linkin-park#">How well do you know your fav band!!</a></td>
-            </tr>
-
-            
-          </tbody>
-         </table>
          </article>
          
 
@@ -390,9 +386,11 @@
          </div>
 
          <br/>
-<a href="#" onclick="return false;" onmousedown="resetScroller('return01');">Go back </a>
 
-    <br>
+  <button type="button" class="btn btn-primary"><a href="#" onclick="return false;" onmousedown="resetScroller('return01');"><font color="red">Nav Header</a></font></button>
+
+
+  <br/>
     <div class="well">
 <blockquote>
           <p>You either get bitter or you get better.It's that simple.You either take what has been dealt to you and allow it to make you a better person, or you allow it to tear it down.The choice does not belong to fate, it belongs to you.</p>
@@ -489,7 +487,7 @@
           <section>
           <body>
             <p>
-              <h2><strong>IBM-- Jan,2013 to October,2013</strong></h2>         
+              <h2><strong>DELL-- April, 2014 to December, 2014</strong></h2>         
             </p>
           </body>
             
@@ -586,33 +584,31 @@
   </div>
   <br/>
 
-  <button type="button" class="btn btn-success"><a href="#" onclick="return false;" onmousedown="resetScroller('return01');"><font color="red">Go back </a></font></button>
+  <button type="button" class="btn btn-success"><a href="#" onclick="return false;" onmousedown="resetScroller('navbar04');"><font color="red">Go back </a></font></button>
 
 
   <br/>
   <br/>
 
-  <div class="well">
+  <div class="well well24">
     <article>
+    <h1>Extracurricular Interests and Activities</h1>
       <ul>
-        <li>sfvsfd f gn g  hm </li>
-        <li>A. TERMS OF SALE
-B. ITUNES STORE TERMS AND CONDITIONS
-C. MAC APP STORE, APP STORE, APP STORE FOR APPLE TV AND IBOOKS STORE TERMS AND CONDITIONS
-D. APPLE MUSIC TERMS AND CONDITIONS
-
-THE LEGAL AGREEMENTS SET OUT BELOW GOVERN YOUR USE OF THE ITUNES STORE, MAC APP STORE, APP STORE, APP STORE FOR APPLE TV, IBOOKS STORE AND APPLE MUSIC SERVICES ("SERVICES"). TO AGREE TO THESE TERMS, CLICK "AGREE." IF YOU DO NOT AGREE TO THESE TERMS, DO NOT CLICK "AGREE," AND DO NOT USE THE SERVICES.
-
-A. TERMS OF SALE
-
-PAYMENTS, TAXES, AND REFUND POLICY
-
-You agree that you will pay for all products you purchase through the Services, and that Apple may charge your payment method for any products purchased and for any additional amounts (including any taxes and late fees, as applicable) that may be accrued by or in connection with your Account. YOU ARE RESPONSIBLE FOR THE TIMELY PAYMENT OF ALL FEES AND FOR PROVIDING APPLE WITH A </li>
-<li>If a product becomes unavailable following a transaction but prior to download, your sole remedy is</li>
-<li>other input device. When accessing the Services on your computer, 1-Click purchasing may be </li>
+        <li>Have been involved with the Rotaracts Club in India for the past 2 years working on diverse domains</li>
+        <li>Have been an active part of drama and classical theater over a period of many years.</li>
+        <li>Have been a painter in illustrative arts and have been a writer for editorials in "The Times of India"  </li>
+        <li>Have played shuttle championships in the state level</li>
       </ul>
+
+      <h2><strong>Thank you- Steve Jobs (Personal Tribute)</strong></h2>
+      <iframe width="420" height="315" 
+src="SteveJobs01.mp4">
+</iframe>
+
+
     </article>
-  </div>
+    </div>
+ 
 
 
 
