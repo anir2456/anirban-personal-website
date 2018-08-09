@@ -1,55 +1,59 @@
 .active{
- font-style: bold;
+    font-style: bold;
 }
 
 
 
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
 
-  .jumbotron01 {
+.summary01{
+    text-align: center;
+}
+
+.jumbotron01 {
     margin-bottom: 0px;
     background-image: url(beauty01.jpg);
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    
+
     margin: auto;
 }
 
-  
-  .navbar navbar-default navbar-fixed-bottom {
+
+.navbar navbar-default navbar-fixed-bottom {
     background-color: #FF0055;
     border-color: #E7E7E7;
 }
 .navbar-text > a{
-	color: inherit;
-	
+    color: inherit;
+
 }
 
 body{
-	padding-top: 70px;
-	
-	padding: 10px;
-	
-  background-image: url("blue02.jpg");
- 
+    padding-top: 70px;
+
+    padding: 10px;
+
+    background-image: url("blue02.jpg");
+
 
 
 
 }
 
 .media-anir{
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .media-anir02{
-  border-radius: 140%;
- -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    border-radius: 140%;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     animation: mymove 5s infinite;
 }
 
@@ -72,7 +76,7 @@ body{
 }
 
 #login-modal input[type=text], input[type=password] {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 #div-login-msg,
@@ -196,20 +200,80 @@ body{
 }
 
 .form-control {
-  border-radius: 0px;
+    border-radius: 0px;
 }
 
 .jumbotron04{
-  background-color: #75858A;
-  color:black;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    background-color: #75858A;
+    color:black;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .well{
-  background-color: #FFFFFF;
-  color: black;
+    background-color: #FFFFFF;
+    color: black;
 }
 .jumbotron04{
-   background-image: url();
+    background-image: url();
 
+}
+
+.theList{
+    list-style:none;
+}
+.websterOuterDiv{
+    background: #87edd3;
+    padding-bottom:10px;
+
+}
+
+.IBMOuterDiv{
+    background-color: #e5d0d8;
+    padding-bottom:10px;
+}
+
+.DellOuterDiv{
+    background: #a4eda3;
+    padding-bottom:10px;
+}
+
+.item{
+    display: flex;
+    justify-content:flex-between;
+}
+
+.websterList, .IBMList, .DellList{
+    list-style: square;
+}
+
+.img01, .img02, .img03{
+    max-height:140px;
+    padding-top: 24px;
+}
+
+.img03{
+    max-width: 160px;
+}
+
+.outerHeading{
+    text-align:center;
+}
+
+.websterDesc, .DellDesc, .IBMDesc{
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.websterInfoHeading,.DellInfoHeading, .IBMInfoHeading{
+    list-style:none;
+    text-align: center;
+}
+
+.profOuterHeading{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.jumbotron{
+    padding-top: 20px;
 }
